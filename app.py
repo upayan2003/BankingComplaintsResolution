@@ -262,34 +262,38 @@ if st.button("Analyze & Resolve", type="primary"):
             # Filter for this category
             df_cat = df_global[df_global['sub-issues'] == predicted_category]
         
-            # Total complaints for this category
-            total_cat_complaints = int(df_cat['total_complaints'].sum())
+            # Check if there are any complaints
+            if df_cat['total_complaints'].sum() == 0:
+                st.warning("⚠️ No complaints have been recorded for this category. Analytics are not available.")
+            else:
+                # Total complaints for this category
+                total_cat_complaints = int(df_cat['total_complaints'].sum())
         
-            # Timely response & dispute rates
-            timely_rate = df_cat['timely_response_rate'].mean()
-            dispute_rate = df_cat['dispute_rate'].mean()
+                # Timely response & dispute rates
+                timely_rate = df_cat['timely_response_rate'].mean()
+                dispute_rate = df_cat['dispute_rate'].mean()
         
-            # Show metrics
-            st.metric("Total Complaints", f"{total_cat_complaints:,}")
-            st.metric("Avg Timely Response Rate", f"{timely_rate*100:.2f}%")
-            st.metric("Avg Dispute Rate", f"{dispute_rate*100:.2f}%")
+                # Show metrics
+                st.metric("Total Complaints", f"{total_cat_complaints:,}")
+                st.metric("Avg Timely Response Rate", f"{timely_rate*100:.2f}%")
+                st.metric("Avg Dispute Rate", f"{dispute_rate*100:.2f}%")
         
-            # Simple pie chart for timely vs not timely
-            fig_pie = px.pie(
-                values=[timely_rate, 1 - timely_rate],
-                names=["Timely", "Not Timely"],
-                title="Timely Response Rate",
-                hole=0.4
-            )
-            st.plotly_chart(fig_pie, use_container_width=True)
+                # Simple pie chart for timely vs not timely
+                fig_pie = px.pie(
+                    values=[timely_rate, 1 - timely_rate],
+                    names=["Timely", "Not Timely"],
+                    title="Timely Response Rate",
+                    hole=0.4
+                )
+                st.plotly_chart(fig_pie, use_container_width=True)
         
-            # Bar chart for dispute vs timely response
-            fig_bar = px.bar(
-                df_cat.melt(id_vars='sub-issues', value_vars=['dispute_rate', 'timely_response_rate']),
-                x='sub-issues',
-                y='value',
-                color='variable',
-                barmode='group',
-                title="Category Rates Comparison"
-            )
-            st.plotly_chart(fig_bar, use_container_width=True)
+                # Bar chart for dispute vs timely response
+                fig_bar = px.bar(
+                    df_cat.melt(id_vars='sub-issues', value_vars=['dispute_rate', 'timely_response_rate']),
+                    x='sub-issues',
+                    y='value',
+                    color='variable',
+                    barmode='group',
+                    title="Category Rates Comparison"
+                )
+                st.plotly_chart(fig_bar, width='stretch')
