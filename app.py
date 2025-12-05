@@ -81,7 +81,7 @@ with col1:
         """,
         unsafe_allow_html=True
     )
-    st.markdown("## Intelligent Banking Complaint Resolution System")
+    st.markdown("# Intelligent Banking Complaint Resolution System")
     st.markdown("##### Powered by Big Data Analytics & Deep Learning")
 
 with col2:
@@ -284,5 +284,6 @@ if st.button("Analyze & Resolve", type="primary"):
                     hole=0.4
                 )
                 st.plotly_chart(fig_pie,  width='stretch')
+
 
 
