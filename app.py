@@ -257,36 +257,39 @@ if st.button("Analyze & Resolve", type="primary"):
         # --- SECTION: SPECIALIZED ANALYTICS (Contextual) ---
         with res_col2:
             st.subheader("📈 Category Analytics")
-            st.info(f"Historical trends for: **{predicted_category}**")
-            
-            # Mock trend data for this specific category
-            dates = pd.date_range(start='2023-01-01', periods=12, freq='ME')
-            trend_data = pd.DataFrame({
-                'Date': dates,
-                'Complaints': [random.randint(100, 500) for _ in range(12)]
-            })
-            
-            # Specific Line Chart
-            fig_trend = px.area(
-                trend_data, x='Date', y='Complaints', 
-                title=f"Volume Trend (Last 12 Months)",
-                line_shape='spline'
+            st.info(f"Analytics for: **{predicted_category}**")
+        
+            # Filter for this category
+            df_cat = df_global[df_global['sub-issues'] == predicted_category]
+        
+            # Total complaints for this category
+            total_cat_complaints = int(df_cat['total_complaints'].sum())
+        
+            # Timely response & dispute rates
+            timely_rate = df_cat['timely_response_rate'].mean()
+            dispute_rate = df_cat['dispute_rate'].mean()
+        
+            # Show metrics
+            st.metric("Total Complaints", f"{total_cat_complaints:,}")
+            st.metric("Avg Timely Response Rate", f"{timely_rate*100:.2f}%")
+            st.metric("Avg Dispute Rate", f"{dispute_rate*100:.2f}%")
+        
+            # Simple pie chart for timely vs not timely
+            fig_pie = px.pie(
+                values=[timely_rate, 1 - timely_rate],
+                names=["Timely", "Not Timely"],
+                title="Timely Response Rate",
+                hole=0.4
             )
-            fig_trend.update_traces(line_color='#1f77b4', fillcolor='rgba(31, 119, 180, 0.3)')
-            fig_trend.update_layout(height=300)
-            st.plotly_chart(fig_trend, width='stretch')
-            
-            # Specific Metric
-            st.metric(
-                label=f"Avg. Compensation", 
-                value="$342.50", 
-                delta="+$12.00 vs Global Avg"
-
+            st.plotly_chart(fig_pie, use_container_width=True)
+        
+            # Bar chart for dispute vs timely response
+            fig_bar = px.bar(
+                df_cat.melt(id_vars='sub-issues', value_vars=['dispute_rate', 'timely_response_rate']),
+                x='sub-issues',
+                y='value',
+                color='variable',
+                barmode='group',
+                title="Category Rates Comparison"
             )
-
-
-
-
-
-
-
+            st.plotly_chart(fig_bar, use_container_width=True)
