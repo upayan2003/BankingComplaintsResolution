@@ -1,0 +1,263 @@
+sub-issues,total_complaints,dispute_rate,timely_response_rate
+Information belongs to someone else,50084,0,0.998203019
+Reporting company used your report improperly,35372,0,0.997455615
+Their investigation did not fix an error on your report,27416,0,0.997410271
+Account information incorrect,13145,0,0.994522632
+Account status incorrect,12938,0,0.994898748
+Credit inquiries on your report that you don't recognize,10767,0,0.996935079
+Investigation took more than 30 days,8291,0,0.997225908
+Debt is not yours,6212,0,0.976336124
+Was not notified of investigation status or results,5626,0,0.9976893
+Personal information incorrect,4679,0,0.996794187
+Debt was result of identity theft,3495,0,0.983690987
+Didn't receive enough information to verify debt,2543,0,0.972866693
+Attempted to collect wrong amount,2458,0.018714402,0.96541904
+Credit card company isn't resolving a dispute about a purchase on your statement,2139,0,0.99485741
+Deposits and withdrawals,2113,0,0.990061524
+Debt was paid,2063,0.027144935,0.961706253
+Notification didn't disclose it was an attempt to collect a debt,1624,0,0.997536946
+Information is missing that should be on the report,1583,0,0.998104864
+Difficulty submitting a dispute or getting information about a dispute over the phone,1582,0,0.994310999
+Problem with personal statement of dispute,1580,0,0.996835443
+Old information reappears or never goes away,1536,0,0.988932292
+Didn't receive notice of right to dispute,1530,0,0.966013072
+Public record information inaccurate,1429,0,0.991602519
+Company closed your account,1350,0,0.991111111
+Problem using a debit or ATM card,1205,0,0.990041494
+Frequent or repeated calls,1176,0.017006803,0.959183673
+Threatened or suggested your credit would be damaged,1092,0,0.957875458
+Transaction was not authorized,1019,0,0.990186457
+Overdrafts and overdraft fees,910,0,0.997802198
+Problem with fees,905,0,0.992265193
+Other problem getting your report or credit score,890,0,0.991011236
+Card was charged for something you did not purchase with the card,848,0,0.988207547
+Trouble with how payments are being handled,795,0,0.867924528
+Problem during payment process,776,0,0.987113402
+Received bad information about your loan,760,0,0.928947368
+Funds not handled or disbursed as instructed,716,0,0.990223464
+Debt is not mine,715,0.206993007,0.932867133
+Other problem,706,0,0.991501416
+"You told them to stop contacting you, but they keep trying",622,0,0.954983923
+Banking errors,596,0,0.984899329
+Funds not received from closed account,554,0,0.994584838
+Information is not mine,533,0.185741088,0.99249531
+Can't close your account,506,0,0.988142292
+Billing problem,469,0,0.989339019
+Problem accessing account,468,0,0.985042735
+Problem with customer service,428,0,0.925233645
+Threatened to sue you for very old debt,421,0,0.909738717
+Card opened without my consent or knowledge,402,0,0.997512438
+Problem canceling credit monitoring or identify theft protection service,400,0,0.995
+Card opened as result of identity theft or fraud,399,0,0.994987469
+Didn't receive advertised or promotional terms,393,0,0.994910941
+Debt was already discharged in bankruptcy and is no longer owed,386,0,0.971502591
+Problem making or receiving payments,378,0,0.984126984
+Application denied,362,0,0.994475138
+Can't use card to make purchases,359,0,0.991643454
+Account status,359,0.167130919,0.991643454
+Unable to open an account,348,0,0.988505747
+Problem getting your free annual credit report,343,0,0.997084548
+Billing dispute for services,340,0,0.982352941
+"Escrow, taxes, or insurance",336,0,0.982142857
+Not given enough info to verify debt,335,0.241791045,0.889552239
+Problem with rewards from credit card,331,0,0.996978852
+Charged too much interest,324,0,1
+Didn't receive terms that were advertised,321,0,0.990654206
+Fee problem,302,0,0.990066225
+Trouble using the card to spend money in a store or online,297,0,0.95959596
+Confusing or misleading advertising about the credit card,264,0,0.988636364
+Talked to a third-party about your debt,250,0,0.912
+Sued you without properly notifying you of lawsuit,245,0,0.983673469
+Trying to communicate with the company to fix an issue while managing or servicing your loan,244,0,0.987704918
+"Impersonated attorney, law enforcement, or government official",243,0,0.925925926
+"Used obscene, profane, or other abusive language",238,0,0.928571429
+Report provided to employer without your written authorization,236,0,0.991525424
+Account opened as a result of fraud,227,0,0.986784141
+Unable to receive car title or other problem after the loan is paid off,222,0,0.990990991
+Payment process,214,0,0.985981308
+Card company isn't resolving a dispute about a purchase or transfer,212,0,0.938679245
+Don't agree with the fees charged,211,0,0.862559242
+Can't get other flexible options for repaying your loan,203,0,0.980295567
+Loan balance remaining after the vehicle is repossessed and sold,197,0,0.964467005
+Credit card company won't increase or decrease your credit limit,195,0,0.98974359
+Right to dispute notice not received,194,0.190721649,0.881443299
+No notice of investigation status/result,190,0.236842105,1
+Credit card company won't work with you while you're going through financial hardship,183,0,1
+Public record,182,0.252747253,0.994505495
+Account terms,177,0.175141243,0.994350282
+"Trying to communicate with the company to fix an issue related to modification, forbearance, short sale, deed-in-lieu, bankruptcy, or foreclosure",176,0,0.994318182
+Seized or attempted to seize your property,172,0,0.947674419
+Problem with fees charged,170,0,0.988235294
+Money was taken from your account on the wrong day or for the wrong amount,169,0,0.982248521
+Non-sufficient funds and associated fees,169,0,0.98816568
+Fraudulent loan,167,0,0.964071856
+Trouble with how payments are handled,162,0.222222222,0.99382716
+Denied request to lower payments,162,0,0.987654321
+Problem with additional products or services purchased with the loan,159,0,0.981132075
+Indicated you were committing crime by not paying debt,158,0,0.924050633
+You never received your bill or did not know a payment was due,158,0,1
+Need information about your loan balance or loan terms,155,0,0.916129032
+Lender trying to repossess or disable the vehicle,143,0,0.979020979
+Debt resulted from identity theft,143,0.202797203,0.923076923
+Didn't receive services that were advertised,143,0,0.993006993
+Loan sold or transferred to another company,142,0,0.957746479
+Received bad information about my loan,141,0.283687943,0.957446809
+Problem lowering your monthly payments,138,0,0.963768116
+Reinserted previously deleted info,133,0.15037594,1
+Charged for a purchase or transfer you did not make with the card,130,0,0.969230769
+"Problem with forgiveness, cancellation, or discharge",128,0,0.703125
+Cashing a check,127,0,0.992125984
+Frequent or repeated messages,127,0,0.968503937
+Information is incorrect,121,0,0.975206612
+Problem with statement of dispute,121,0.314049587,1
+Problem with the interest rate,117,0,0.991452991
+Account opened without my consent or knowledge,116,0,0.99137931
+Sent card you never applied for,112,0,0.991071429
+Received unsolicited financial product or insurance offers after opting out,111,0,0.981981982
+Talked to a third party about my debt,110,0.218181818,0.927272727
+Threatened to arrest you or take you to jail if you do not pay,108,0,0.861111111
+Unexpected increase in interest rate,108,0,0.990740741
+Threatened to take legal action,106,0.141509434,0.867924528
+Personal information,105,0.085714286,1
+Problem with product or service terms changing,104,0,0.980769231
+Can't stop withdrawals from your account,103,0,1
+Problem with paying off the loan,101,0,0.98019802
+Contacted you after you asked them to stop,101,0,0.940594059
+Problem with balance transfer,99,0,1
+Don't agree with fees charged,98,0.163265306,0.959183673
+Can't decrease my monthly payments,98,0.142857143,0.989795918
+Foreclosure,98,0,0.989795918
+Having problems with customer service,96,0.177083333,0.989583333
+Confusing or misleading advertising or marketing,96,0,0.9375
+Privacy issues,93,0,1
+Contacted your employer,93,0,0.946236559
+Collected or attempted to collect exempt funds,89,0,0.97752809
+Overcharged for something you did purchase with the card,89,0,0.966292135
+"Applying for or obtaining a modification, forbearance plan, short sale, or deed-in-lieu",88,0,0.988636364
+Report improperly shared by CRC,87,0.218390805,0.988505747
+Problem getting my free annual report,87,0.172413793,1
+Can't temporarily delay making payments,78,0,0.961538462
+Trouble closing card,78,0,0.974358974
+Credit denial,76,0,1
+Delay in processing application,76,0,1
+Investigation took too long,74,0.283783784,1
+Bounced checks or returned payments,74,0,1
+Threatened to sue on too old debt,71,0.098591549,0.901408451
+Problem getting report or credit score,70,0.171428571,1
+Called before 8am or after 9pm,66,0,0.893939394
+Fees charged for closing account,65,0,0.969230769
+Can't get flexible payment options,65,0.169230769,0.984615385
+Add-on products and services,62,0,1
+"An existing modification, forbearance plan, short sale, or other loss mitigation relief",61,0,0.983606557
+Problem with your payment plan,60,0,0.733333333
+"Trouble getting, activating, or registering a card",60,0,0.916666667
+Received unwanted marketing or advertising,58,0,0.982758621
+Changes in terms mid-deal or after closing,56,0,1
+Problem while selling or giving up the vehicle,56,0,1
+Problem getting a working replacement card,56,0,1
+Late or other fees,55,0,1
+Trouble getting information about the card,54,0,0.962962963
+Sued you in a state where you do not live or did not sign for the debt,52,0,0.923076923
+Loan opened without my consent or knowledge,52,0,0.942307692
+Debt was discharged in bankruptcy,51,0.215686275,0.941176471
+Keep getting calls about your loan,50,0,1
+Paying off the loan,50,0,0.98
+Contacted me after I asked not to,48,0.270833333,0.9375
+Trying to communicate with the company to fix an issue with the application process,48,0,1
+Fees charged,48,0,1
+Threatened arrest/jail if do not pay,47,0.063829787,0.808510638
+Voluntary repossession,46,0,0.97826087
+Information that should be on the report is missing,43,0,0.976744186
+Used obscene/profane/abusive language,41,0.073170732,0.87804878
+Closing disclosure or other related disclosures,40,0,0.975
+Account reinstatement or redemption after repossession,40,0,1
+Private mortgage insurance (PMI),40,0,1
+Confusing or missing disclosures,40,0,0.975
+Application denials,38,0,0.973684211
+Need information about my balance/terms,38,0.131578947,0.947368421
+"Excess mileage, damage, or wear fees, or other problem after the lease is finished",38,0,1
+Contacted employer after asked not to,37,0.081081081,0.864864865
+Told you not to respond to a lawsuit they filed against you,36,0,0.972222222
+Trouble getting a working replacement card,36,0,0.944444444
+High-pressure sales tactics,36,0,1
+Trying to communicate with the company to fix an issue with the loan closing,35,0,0.971428571
+Inadequate help over the phone,35,0.228571429,1
+Not disclosed as an attempt to collect,34,0.264705882,0.941176471
+Problem related to refinancing,34,0,1
+Sued w/o proper notification of suit,33,0.242424242,0.878787879
+Termination fees or other problem when ending the lease early,32,0,1
+Notice to repossess,32,0,1
+Called after sent written cease of comm,31,0.290322581,0.935483871
+Seized/Attempted to seize property,31,0.419354839,0.967741935
+Problem using the card to withdraw money from an ATM,30,0,0.933333333
+Deficiency balance after repossession,30,0,0.933333333
+Indicated committed crime not paying,29,0.137931034,0.827586207
+Confusing or misleading advertising,29,0,0.931034483
+Keep getting calls about my loan,28,0.214285714,1
+Delays in the application process,27,0,1
+Called outside of 8am-9pm,27,0.111111111,0.962962963
+Damage caused or loss of personal items in vehicle during the actual repossession,26,0,0.961538462
+Problem with signing the paperwork,26,0,0.923076923
+Changes in loan terms during or after closing,26,0,0.769230769
+Impersonated an attorney or official,26,0.192307692,0.807692308
+Credit card company forcing arbitration,24,0,1
+Deposits or withdrawals,23,0,0.956521739
+Problem with direct deposit,23,0,1
+Billing dispute,22,0.136363636,1
+Don't want a card provided by your employer or the government,22,0,1
+Can't temporarily postpone payments,22,0.181818182,1
+Problem when attempting to purchase vehicle at the end of the lease,21,0,1
+Problem after you declared or threatened to declare bankruptcy,21,0,0.952380952
+Changes in loan terms during the application process,20,0,1
+Problem with additional add-on products or services purchased with the loan,20,0,1
+Delays with the closing process,20,0,0.95
+Company explaining amount owed,19,0,0.947368421
+Problem with cash advances,19,0,1
+Problem with fraud alerts,19,0.210526316,1
+Confusing or misleading advertising about the card,19,0,1
+Company communicating payment assistance or payment extension options,18,0,1
+Loan estimate or other related disclosures,16,0,0.875
+Contacted before 8am or after 9pm,14,0,1
+Fees or costs after closing,13,0,1
+Fees or costs during the application process,12,0,1
+Trouble using the card to pay a bill,12,0,1
+Can't qualify for a loan,11,0.454545455,1
+Indicated shouldn't respond to lawsuit,11,0.090909091,0.909090909
+High pressure sales tactics or recruiting,11,0,0.909090909
+Interest rate,11,0,1
+Changes in terms from what was offered or advertised,11,0,1
+Account terms and changes,10,0.2,1
+Sued where didn't live/sign for debt,10,0.3,1
+Attempted to/Collected exempt funds,10,0.2,0.9
+Lien release,9,0,1
+Problem with fees or penalties,9,0,1
+Denied loan,9,0,1
+Problem with renewal,9,0,1
+Bankruptcy,9,0,1
+Account sold or transferred to another company,8,0,1
+Co-signer,8,0,1
+Filed for bankruptcy,8,0,1
+Overdraft charges,8,0,0.875
+Overcharged for a purchase or transfer you did make with the card,8,0,0.875
+Problem extending the lease,8,0,1
+Contacted you instead of your attorney,7,0,0.857142857
+Negative impact of inaccurate appraisal,7,0,1
+Problem with convenience check,6,0,1
+Problem adding money,6,0,1
+Problem cancelling or closing account,5,0.2,1
+Qualify for a better loan than offered,4,0.5,0.75
+Problem with a trade-in,4,0,1
+Trouble using the card to send money to another person,4,0,1
+Contacted me instead of my attorney,4,0.25,0.75
+Issues with fees connected to the loan,4,0,1
+Marketing or disclosure issues,3,0,1
+"Cannot graduate, receive diploma, or get transcript due to money owed",3,0,1
+Dealing with provider of income share agreement,2,0,0.5
+Did not receive car title,2,0,1
+Setting up an escrow account for taxes and insurance,2,0,1
+Received marketing offer after opted out,2,0.5,1
+Receiving unwanted marketing/advertising,2,0,1
+Issues with financial aid services,1,0,1
+Problem with a check written from your prepaid card account,1,0,1
+Billing or statement issues,1,0,1
+Threatened to turn you in to immigration or deport you,1,0,1
