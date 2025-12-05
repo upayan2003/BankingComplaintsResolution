@@ -165,7 +165,7 @@ fig_map = px.choropleth(
 fig_map.update_layout(
     geo=dict(bgcolor='rgba(0,0,0.5,0.05)'),
     margin={"r":0,"t":0,"l":0,"b":0},  # Tight margins
-    height=300
+    height=400
 )
 
 st.plotly_chart(fig_map, width='stretch')
@@ -263,5 +263,6 @@ if st.button("Analyze & Resolve", type="primary"):
                 delta="+$12.00 vs Global Avg"
 
             )
+
 
 
