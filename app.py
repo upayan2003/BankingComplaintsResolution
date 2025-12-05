@@ -111,7 +111,7 @@ with col2:
 st.divider()
 
 # --- SECTION: GENERAL ANALYTICS ---
-st.subheader("Global Complaint Landscape")
+st.markdown("## Global Complaint Landscape")
 st.markdown("##### Real-time analysis of Banking Complaints in the US")
 viz_col1, viz_col2 = st.columns([2, 1])
 
@@ -161,7 +161,7 @@ with viz_col2:
 st.divider()
 
 # --- SECTION: GEOGRAPHIC MAP ---
-st.subheader("Geographic Complaint Intensity")
+st.markdown("## Geographic Complaint Intensity")
 st.markdown("##### Interactive map showing complaint volume by state. Hover for details.")
 
 # 1. Load Data
@@ -284,4 +284,5 @@ if st.button("Analyze & Resolve", type="primary"):
                     hole=0.4
                 )
                 st.plotly_chart(fig_pie,  width='stretch')
+
 
