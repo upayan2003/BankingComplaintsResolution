@@ -258,6 +258,32 @@ if st.button("Analyze & Resolve", type="primary"):
         with res_col2:
             st.subheader("📈 Category Analytics (State-wise)")
             st.info(f"Analytics for: **{predicted_category}**")
+            
+            # Filter for this category
+            df_cat = df_global[df_global['sub-issues'] == predicted_category]
+
+            # Check if there are any complaints
+            if df_cat['total_complaints'].sum() == 0:
+                st.warning("⚠️ No complaints have been recorded for this category. Analytics are not available.")
+            else:
+                # Total complaints for this category
+                total_cat_complaints = int(df_cat['total_complaints'].sum())
+        
+                # Timely response rate
+                timely_rate = df_cat['timely_response_rate'].mean()
+        
+                # Show metrics
+                st.metric("Total Complaints", f"{total_cat_complaints:,}")
+                st.metric("Avg Timely Response Rate", f"{timely_rate*100:.2f}%")
+        
+                # Pie chart for timely vs not timely
+                fig_pie = px.pie(
+                    values=[timely_rate, 1 - timely_rate],
+                    names=["Timely", "Not Timely"],
+                    title="Timely Response Rate",
+                    hole=0.4
+                )
+                st.plotly_chart(fig_pie,  width='stretch')
         
             # Filter df_geo for states where this category is most common
             df_cat_geo = df_geo[df_geo['Most Common Issue'] == predicted_category]
