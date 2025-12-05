@@ -68,7 +68,7 @@ with col1:
         gap: 15px;
         margin-bottom: -15px;
     ">
-        <img src="assets/logo.png" 
+        <img src="logo.png" 
              style="width:70px; height:auto; border-radius:8px;">
         <p class="big-font" style="margin:0;">ZeroLedger</p>
     </div>
@@ -277,6 +277,7 @@ if st.button("Analyze & Resolve", type="primary"):
                 delta="+$12.00 vs Global Avg"
 
             )
+
 
 
 
