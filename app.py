@@ -62,6 +62,7 @@ df_global = load_global_analytics()
 with col1:
     st.markdown(
     f"""
+    <p class="big-font" style="margin:0;">ZeroLedger</p>
     <div style="
         display: flex;
         align-items: center;
@@ -70,7 +71,6 @@ with col1:
     ">
         <img src="logo.png" 
              style="width:70px; height:auto; border-radius:8px;">
-        <p class="big-font" style="margin:0;">ZeroLedger</p>
     </div>
     """,
     unsafe_allow_html=True
@@ -277,6 +277,7 @@ if st.button("Analyze & Resolve", type="primary"):
                 delta="+$12.00 vs Global Avg"
 
             )
+
 
 
 
