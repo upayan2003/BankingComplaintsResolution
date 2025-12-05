@@ -76,7 +76,7 @@ with col1:
         ">
             <p class="big-font" style="margin:0;">ZeroLedger</p>
             <img src="data:image/png;base64,{logo_base64}"
-                 style="width:70px; height:auto; border-radius:8px;">
+                 style="width:100px; height:auto; border-radius:8px;">
         </div>
         """,
         unsafe_allow_html=True
@@ -283,6 +283,7 @@ if st.button("Analyze & Resolve", type="primary"):
                 delta="+$12.00 vs Global Avg"
 
             )
+
 
 
 
