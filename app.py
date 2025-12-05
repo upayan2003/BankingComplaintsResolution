@@ -256,7 +256,7 @@ if st.button("Analyze & Resolve", type="primary"):
 
         # --- SECTION: SPECIALIZED ANALYTICS (Contextual) ---
         with res_col2:
-            st.subheader("📈 Category Analytics (State-wise)")
+            st.subheader("📈 Category Analytics")
             st.info(f"Analytics for: **{predicted_category}**")
             
             # Filter for this category
@@ -284,43 +284,3 @@ if st.button("Analyze & Resolve", type="primary"):
                     hole=0.4
                 )
                 st.plotly_chart(fig_pie,  width='stretch')
-        
-            # Filter df_geo for states where this category is most common
-            df_cat_geo = df_geo[df_geo['Most Common Issue'] == predicted_category]
-        
-            if df_cat_geo['Total Complaints'].sum() == 0:
-                st.warning("⚠️ No complaints recorded for this category across any state. Analytics are not available.")
-            else:
-                # Total complaints across all states
-                total_cat_complaints = int(df_cat_geo['Total Complaints'].sum())
-                st.metric("Total Complaints (All States)", f"{total_cat_complaints:,}")
-        
-                # Overall timely response rate
-                timely_rate = df_cat_geo['No of Complaints Closed Timely'].sum() / df_cat_geo['Total Complaints'].sum()
-                st.metric("Avg Timely Response Rate", f"{timely_rate*100:.2f}%")
-        
-                # Bar chart: Total complaints per state
-                fig_state_bar = px.bar(
-                    df_cat_geo,
-                    x='State',
-                    y='Total Complaints',
-                    color='Total Complaints',
-                    title=f"State-wise Complaints for '{predicted_category}'",
-                    color_continuous_scale='Blues'
-                )
-                st.plotly_chart(fig_state_bar, width='stretch')
-        
-                # Table: Top companies most complained about
-                st.markdown("#### Companies Most Complained About")
-                st.dataframe(df_cat_geo[['State', 'Company Most Commonly Complained About', 'Total Complaints']].sort_values(
-                    'Total Complaints', ascending=False
-                ))
-        
-                # Optional: Pie chart for overall timely vs not timely
-                fig_pie = px.pie(
-                    values=[timely_rate, 1 - timely_rate],
-                    names=["Timely", "Not Timely"],
-                    title="Timely Response Rate (All States)",
-                    hole=0.4
-                )
-                st.plotly_chart(fig_pie, width='stretch')
