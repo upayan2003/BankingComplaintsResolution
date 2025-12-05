@@ -18,12 +18,12 @@ st.set_page_config(
 )
 
 # --- CONFIGURATION CHECK ---
-# Ensure API Key is set in environment or let user know
-if "GROQ_API_KEY" not in os.environ and "GROQ_API_KEY" not in st.secrets:
-    # Try to load from local file for development convenience
-    if os.path.exists("GroqAPI_Key.txt"):
-        with open("GroqAPI_Key.txt", "r") as f:
-            os.environ["GROQ_API_KEY"] = f.read().strip()
+if "gcp" in st.secrets and "GROQ_API_KEY" in st.secrets["gcp"]:
+    os.environ["GROQ_API_KEY"] = st.secrets["gcp"]["GROQ_API_KEY"]
+
+elif os.path.exists("GroqAPI_Key.txt"):
+    with open("GroqAPI_Key.txt", "r") as f:
+        os.environ["GROQ_API_KEY"] = f.read().strip()
 
 # --- CUSTOM CSS FOR UI ---
 st.markdown("""
@@ -263,3 +263,4 @@ if st.button("Analyze & Resolve", type="primary"):
                 delta="+$12.00 vs Global Avg"
 
             )
+
