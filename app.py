@@ -11,7 +11,7 @@ from llm_agent import generate_ai_response
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(
-    page_title="Banking Complaint AI",
+    page_title="ZeroLedger - Banking Complaints Resolution App",
     page_icon="🏦",
     layout="wide",
     initial_sidebar_state="collapsed"
@@ -60,9 +60,9 @@ col1, col2 = st.columns([2, 1])
 df_global = load_global_analytics()
 
 with col1:
-    st.markdown('<p class="big-font">Guardian AI</p>', unsafe_allow_html=True)
+    st.markdown('<p class="big-font">ZeroLedger</p>', unsafe_allow_html=True)
     st.markdown("## Intelligent Banking Complaint Resolution System")
-    st.markdown("##### Powered by Big Data & Deep Learning")
+    st.markdown("##### Powered by Big Data Analytics & Deep Learning")
 
 with col2:
     # Compute KPIs
@@ -261,4 +261,5 @@ if st.button("Analyze & Resolve", type="primary"):
                 label=f"Avg. Compensation", 
                 value="$342.50", 
                 delta="+$12.00 vs Global Avg"
+
             )
