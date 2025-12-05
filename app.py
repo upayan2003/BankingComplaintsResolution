@@ -38,7 +38,7 @@ st.markdown("""
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
     .big-font {
-        font-size: 50px !important;
+        font-size: 72px !important;
         font-weight: 700;
         color: #1f77b4;
     }
@@ -60,7 +60,21 @@ col1, col2 = st.columns([2, 1])
 df_global = load_global_analytics()
 
 with col1:
-    st.markdown('<p class="big-font">ZeroLedger</p>', unsafe_allow_html=True)
+    st.markdown(
+    f"""
+    <div style="
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: -15px;
+    ">
+        <img src="assets/logo.png" 
+             style="width:70px; height:auto; border-radius:8px;">
+        <p class="big-font" style="margin:0;">ZeroLedger</p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
     st.markdown("## Intelligent Banking Complaint Resolution System")
     st.markdown("##### Powered by Big Data Analytics & Deep Learning")
 
@@ -263,6 +277,7 @@ if st.button("Analyze & Resolve", type="primary"):
                 delta="+$12.00 vs Global Avg"
 
             )
+
 
 
 
