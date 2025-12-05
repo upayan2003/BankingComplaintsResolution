@@ -166,7 +166,6 @@ st.markdown("##### Interactive map showing complaint volume by state. Hover for 
 
 # 1. Load Data
 df_geo = load_geo_analytics()
-print(df_geo.head())
 
 # 2. Create Map
 fig_map = px.choropleth(
@@ -194,7 +193,8 @@ st.divider()
 
 # --- SECTION: AI AGENT ---
 st.markdown("## 🤖 AI Resolution Assistant")
-st.info("Describe your banking issue below. Our Deep Learning model will classify it, and the Agent will generate a solution.")
+st.markdown("##### Describe your banking issue below:")
+st.info("Our RoBERTa Base Transformer model will classify it, and the AI Agent will generate a solution.")
 
 # Input area
 user_complaint = st.text_area("Complaint Details", height=300, placeholder="Example: I noticed a charge of $500 on my credit card that I did not authorize...")
@@ -283,6 +283,7 @@ if st.button("Analyze & Resolve", type="primary"):
                 delta="+$12.00 vs Global Avg"
 
             )
+
 
 
 
