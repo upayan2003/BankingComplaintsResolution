@@ -283,13 +283,3 @@ if st.button("Analyze & Resolve", type="primary"):
                 delta="+$12.00 vs Global Avg"
 
             )
-
-
-
-
-
-
-
-
-
-
