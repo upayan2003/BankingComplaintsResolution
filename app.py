@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 import pandas as pd
 import plotly.express as px
 import time
@@ -293,5 +294,6 @@ if st.button("Analyze & Resolve", type="primary"):
                 delta="+$12.00 vs Global Avg"
 
             )
+
 
 
