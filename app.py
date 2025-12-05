@@ -1,5 +1,4 @@
 import streamlit as st
-import streamlit.components.v1 as components
 import pandas as pd
 import plotly.express as px
 import time
@@ -254,32 +253,6 @@ if st.button("Analyze & Resolve", type="primary"):
             {ai_response}
             </div>
             """, unsafe_allow_html=True)
-            
-            components.html(f"""
-            <style>
-            .copy-btn {{
-                background-color: #1f77b4;
-                color: white;
-                border: none;
-                padding: 10px 20px;
-                border-radius: 8px;
-                font-size: 16px;
-                cursor: pointer;
-                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            }}
-            .copy-btn:hover {{
-                background-color: #155a8a;
-            }}
-            </style>
-            
-            <button class="copy-btn" onclick="
-                const text = document.getElementById('ai-resolution').innerText;
-                navigator.clipboard.writeText(text);
-                alert('Resolution copied to clipboard!');
-            ">
-            📋 Copy this Response
-            </button>
-            """, height=80)
 
         # --- SECTION: SPECIALIZED ANALYTICS (Contextual) ---
         with res_col2:
@@ -310,6 +283,7 @@ if st.button("Analyze & Resolve", type="primary"):
                 delta="+$12.00 vs Global Avg"
 
             )
+
 
 
 
