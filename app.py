@@ -4,6 +4,7 @@ import plotly.express as px
 import time
 import random
 import os
+import base64
 
 # Import modules created in previous steps
 from utils import load_global_analytics, predict_complaint_class, load_geo_analytics
@@ -59,22 +60,27 @@ st.markdown("""
 col1, col2 = st.columns([2, 1])
 df_global = load_global_analytics()
 
+def load_base64_image(path):
+    with open(path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode()
+logo_base64 = load_base64_image("logo.png")
+
 with col1:
     st.markdown(
-    f"""
-    <div style="
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        margin-bottom: -15px;
-    ">
-        <p class="big-font" style="margin:0;">ZeroLedger</p>
-        <img src="/static/logo.png" 
-             style="width:70px; height:auto; border-radius:8px;">
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+        f"""
+        <div style="
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: -15px;
+        ">
+            <p class="big-font" style="margin:0;">ZeroLedger</p>
+            <img src="data:image/png;base64,{logo_base64}"
+                 style="width:70px; height:auto; border-radius:8px;">
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
     st.markdown("## Intelligent Banking Complaint Resolution System")
     st.markdown("##### Powered by Big Data Analytics & Deep Learning")
 
@@ -277,6 +283,7 @@ if st.button("Analyze & Resolve", type="primary"):
                 delta="+$12.00 vs Global Avg"
 
             )
+
 
 
 
