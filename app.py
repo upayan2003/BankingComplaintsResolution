@@ -111,7 +111,7 @@ with col2:
 st.divider()
 
 # --- SECTION: GENERAL ANALYTICS ---
-st.subheader("📊 Global Complaint Landscape")
+st.subheader("Global Complaint Landscape")
 st.markdown("##### Real-time analysis of Banking Complaints in the US")
 viz_col1, viz_col2 = st.columns([2, 1])
 
@@ -161,7 +161,7 @@ with viz_col2:
 st.divider()
 
 # --- SECTION: GEOGRAPHIC MAP ---
-st.subheader("🗺️ Geographic Complaint Intensity")
+st.subheader("Geographic Complaint Intensity")
 st.markdown("##### Interactive map showing complaint volume by state. Hover for details.")
 
 # 1. Load Data
@@ -192,7 +192,7 @@ st.plotly_chart(fig_map, width='stretch')
 st.divider()
 
 # --- SECTION: AI AGENT ---
-st.markdown("## 🤖 AI Resolution Assistant")
+st.markdown("## AI Resolution Assistant")
 st.markdown("##### Describe your banking issue below:")
 st.write("Our RoBERTa Base Transformer model will classify it, and the AI Agent will generate a solution.")
 
@@ -230,7 +230,7 @@ if st.button("Analyze & Resolve", type="primary"):
             st.write(f"✅ Classified as: **{predicted_category}** ({label})")
             
             # 3. Call GenAI
-            st.write("🤖 Retrieving Policy Documents & Generating Solution...")
+            st.write("Retrieving Policy Documents & Generating Solution...")
             
             # Passing both complaint and category to the agent
             ai_response = generate_ai_response(user_complaint, predicted_category)
@@ -284,3 +284,4 @@ if st.button("Analyze & Resolve", type="primary"):
                     hole=0.4
                 )
                 st.plotly_chart(fig_pie,  width='stretch')
+
