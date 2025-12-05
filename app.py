@@ -253,6 +253,9 @@ if st.button("Analyze & Resolve", type="primary"):
             {ai_response}
             </div>
             """, unsafe_allow_html=True)
+            
+            if st.button("📋 Copy Resolution"):
+                st.text_area("Copy this response:", value=ai_response, height=200)
 
         # --- SECTION: SPECIALIZED ANALYTICS (Contextual) ---
         with res_col2:
@@ -283,3 +286,4 @@ if st.button("Analyze & Resolve", type="primary"):
                 delta="+$12.00 vs Global Avg"
 
             )
+
