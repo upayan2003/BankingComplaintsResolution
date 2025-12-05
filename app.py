@@ -254,8 +254,15 @@ if st.button("Analyze & Resolve", type="primary"):
             </div>
             """, unsafe_allow_html=True)
             
-            if st.button("📋 Copy Resolution"):
-                st.text_area("Copy this response:", value=ai_response, height=200)
+            components.html(f"""
+            <button onclick="
+                const text = document.getElementById('ai-resolution').innerText;
+                navigator.clipboard.writeText(text);
+                alert('Resolution copied to clipboard!');
+            ">
+            📋 Copy Resolution
+            </button>
+            """, height=60)
 
         # --- SECTION: SPECIALIZED ANALYTICS (Contextual) ---
         with res_col2:
@@ -286,4 +293,5 @@ if st.button("Analyze & Resolve", type="primary"):
                 delta="+$12.00 vs Global Avg"
 
             )
+
 
