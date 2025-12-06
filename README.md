@@ -32,6 +32,7 @@ ZeroLedger is an AI-powered Streamlit application that analyzes banking complain
 
 ## Project Structure
 
+```bash
 ZeroLedger/
 │
 ├── app.py # Main Streamlit UI
@@ -40,6 +41,7 @@ ZeroLedger/
 ├── data/ # Global & geo datasets
 ├── requirements.txt
 └── README.md
+```
 
 ---
 
